@@ -1,2 +1,5 @@
-node_modules
-dist
+_site
+.DS_Store
+*.swp
+.sass-cache
+*~
