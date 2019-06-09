@@ -12,7 +12,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h6 class="modal-title" id="modal-title-default">Type your modal title</h6>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="d('Cross click')">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">×</span>
             </button>
           </div>
@@ -22,7 +22,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-primary">Save changes</button>
-            <button type="button" class="btn btn-link  ml-auto" data-dismiss="modal" (click)="c('Close click')">Close</button>
+            <button type="button" class="btn btn-link  ml-auto" data-dismiss="modal">Close</button>
           </div>
         </div>
       </ng-template>
@@ -36,7 +36,7 @@
         <div class="modal-content bg-gradient-danger">
           <div class="modal-header">
             <h6 class="modal-title" id="modal-title-notification">Your attention is required</h6>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="d('Cross click')">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">×</span>
             </button>
           </div>
@@ -49,7 +49,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-white">Ok, Got it</button>
-            <button type="button" class="btn btn-link text-white ml-auto" data-dismiss="modal" (click)="c('Close click')">Close</button>
+            <button type="button" class="btn btn-link text-white ml-auto" data-dismiss="modal" >Close</button>
           </div>
         </div>
       </ng-template>
@@ -130,7 +130,7 @@
           <div class="input-group-prepend">
             <span class="input-group-text"><i class="ni ni-calendar-grid-58"></i></span>
           </div>
-          <input class="form-control datepicker" placeholder="Select date" name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker" (click)="d.toggle()" (focus)="focus2=true" (blur)="focus2=false" type="text" (select)="onDateSelection($event)" autocomplete="off"/>
+          <input class="form-control datepicker" placeholder="Select date" name="dp" [(ngModel)]="model1" ngbDatepicker #d="ngbDatepicker" (click)="d.toggle()" (focus)="focus2=true" (blur)="focus2=false" type="text" autocomplete="off"/>
         </div>
       </div>
     </div>
@@ -143,7 +143,7 @@
               <div class="input-group-prepend">
                 <span class="input-group-text"><i class="ni ni-calendar-grid-58"></i></span>
               </div>
-              <input class="form-control datepicker" placeholder="Select date" name="dp1" [(ngModel)]="model1" ngbDatepicker #d1="ngbDatepicker" (click)="d1.toggle()" (select)="mama($event)" type="text" [dayTemplate]="t" (dateSelect)="startDateChanged($event)" autocomplete="off" (focus)="focus3=true" (blur)="focus3=false"/>
+              <input class="form-control datepicker" placeholder="Select date" name="dp1" [(ngModel)]="model1" ngbDatepicker #d1="ngbDatepicker" (click)="d1.toggle()" type="text" [dayTemplate]="t" (dateSelect)="startDateChanged($event)" autocomplete="off" (focus)="focus3=true" (blur)="focus3=false"/>
               <ng-template #t let-date let-focused="focused" >
                <span class="custom-day"
                 [class.text-white]="isActive(date)"
