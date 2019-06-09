@@ -7,13 +7,14 @@ title: Home
 
 <!-- Featured
 ================================================== -->
+<!-- 
 <section class="featured-posts">
     <div class="section-title">
         <h2><span>Featured</span></h2>
     </div>
     <div class="row">
-
-    {% for post in site.posts %}
+{% comment %}
+   {% for post in site.posts %}
 
         {% if post.featured == true %}
 
@@ -22,10 +23,11 @@ title: Home
         {% endif %}
 
     {% endfor %}
+    {% endcomment %}
 
     </div>
 </section>
-
+-->
 {% endif %}
 
 <!-- Posts Index
