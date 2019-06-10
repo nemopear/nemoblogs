@@ -1,0 +1,86 @@
+---
+layout: post
+title: การใช้ Web font ใน Email
+date: 2018-08-15 02:05:16.000000000 +07:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- Coding
+tags:
+- email
+- html
+- webfont
+meta:
+  _edit_last: '12737289'
+  geo_public: '0'
+  _thumbnail_id: '1694'
+  timeline_notification: '1534298719'
+  _publicize_job_id: '21094111886'
+author:
+  login: nemopear
+  email: nemopear@gmail.com
+  display_name: nemopear
+  first_name: NUTCHAYA
+  last_name: VORAYINGYONG
+permalink: "/2018/08/15/%e0%b8%81%e0%b8%b2%e0%b8%a3%e0%b9%83%e0%b8%8a%e0%b9%89-web-font-%e0%b9%83%e0%b8%99-email/"
+---
+<p>เวลาที่ต้องจัดหน้าตาของ Email ให้มันดูดี มีดีไซน์เก๋ สีต้องได้ font ต้องมี เว็บหลักเราใช้ font แบบไหน เราก็อยากจะใช้ font แบบนั้นในอีเมลของเราด้วย<br />
+อีเมลที่ได้รับบางครั้งก็มีดีไซน์ที่สวยงามมาก แต่ว่าเป็นการแนบเป็นรูปใหญ่ๆ รูปเดียวเลย ซึ่งมันก็มีข้อเสียนะ มันทำให้บางทีลูกค้าก็อาจจะพลาดสาระสำคัญไป ในกรณีที่ต้องคลิก Unblock เพื่อดูรูป แต่เขาไม่ได้คลิก เขาก็จะไม่เห็นข้อความที่เราต้องการจะสื่อ และอีกอย่างพอรูปใหญ่มากๆ ก็โหลดนานไปอีก</p>
+<p>การทำ Web font ให้อีเมลก็เป็นอีกทางเลือกหนึ่ง ข้อดีคือตัวอักษรก็จะคมชัดกว่าตัวอักษรที่ทำเป็นรูป แก้ไขง่าย เวลาเปลี่ยนแปลง text ก็ไม่ต้องไปทำรูปมาใหม่<br />
+อีกทั้งก็ยังช่วยลด Loading time แต่มันก็ขึ้นอยู่กับ จำนวน Web font ที่เราใช้ในอีเมลนะ ถ้าเรียกใช้เยอะก็โหลดนานอยู่ ข้อดีก็มี ข้อเสียก็มีบ้าง<br />
+อยากใช้ก็อยากใช้ แต่มันมีข้อจำกัดในแต่ละ Email clients</p>
+<p>ปกติใน Email clients จะมี Font default ไม่เหมือนกัน</p>
+<p>Apple mail ใช้ Helvetica<br />
+Gmail ใช้ Arial<br />
+Outlook 2016 ใช้ Calibri</p>
+<h2>วิธีการเพิ่ม Web font ในอีเมล โดยใช้ Web font จาก <a href="https://fonts.google.com/">Google Fonts</a></h2>
+<h3></h3>
+<h3>1. วิธี import</h3>
+<p>เลือก font ที่ต้องการ แล้ว copy code ในแท็บ @import ไปวางใน &lt;head&gt; ของเราเลย ในที่นี้เราเลือก font ชื่อว่า <strong>Pacifico</strong></p>
+<pre>&lt;style&gt;
+   @import url('https://fonts.googleapis.com/css?family=<span class="collection-drawer-emphasized-code">Pacifico</span>');
+&lt;/style&gt;</pre>
+<p>[caption id="attachment_1682" align="aligncenter" width="790"]<img class="wp-image-1682" title="Google font" src="{{ site.baseurl }}/assets/choose-font.png" alt="" width="790" height="660" /> เลือก Web font จาก Google font แล้ว copy code ไปไว้ใน[/caption]</p>
+<h3>2. วิธีใช้ &lt;link&gt;</h3>
+<p>เลือก font ที่ต้องการ แล้วคลิกที่แท็บ Standard แล้ว copy code ไปวางไว้ใน &lt;head&gt; เหมือนกับวิธี import แต่วิธีใช้ &lt;link&gt; จะดีกว่าวิธี import เพราะ import จะรอให้ HTML ทั้งหมดโหลดเสร็จก่อน ส่วน &lt;link&gt; จะเรียกมาโดยเรียงการอ่านแบบ HTML จากบนลงล่าง แต่ว่าก็อาจจะใช้เวลาโหลดนาน ถ้าขนาดของ Web font ที่เราเรียกมามีขนาดใหญ่</p>
+<pre>&lt;link href="https://fonts.googleapis.com/css?family=<span class="collection-drawer-emphasized-code">Pacifico</span>" rel="stylesheet"&gt;</pre>
+<h3>3.  วิธีใช้  @fontface</h3>
+<p>เวลาเรา generate web font เว็บไซต์ทำ Web font ก็จะเตรียม font format มาให้ ได้แก่ .eot, .woff, .woff2, .svg และ .ttf ซึ่งจริงๆ .woff  เป็น fotmat ที่ดีที่สุดในการใช้ในอีเมล</p>
+<p>เมื่อเรา generate font face มาแล้ว เราก็ copy การประกาศ @font-face ไปไว้ใน &lt;style&gt;  เพื่อที่เราจะเรียกใช้ Web font ได้</p>
+<pre>@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Pacifico Regular'), local('Pacifico-Regular'), url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6D6MmTpA.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}</pre>
+<p>&nbsp;</p>
+<p>ไม่ว่าจะเลือกใช้วิธีอะไร import, &lt;link&gt; หรือ @fontface เวลาประกาศ Web font ที่เราจะใช้แล้ว  เราก็นำไปใช้ได้เลย โดยเรียกด้วย property นี้</p>
+<pre><span class="attribute">font<span class="hljs-attribute">-family</span></span>: <span class="hljs-string"><span class="string">'Pacifico'</span></span><span class="string">, sans<span class="hljs-attribute">-serif</span>;</span></pre>
+<p>การเลือก fallback font  ในกรณีที่ Email clients ไม่ support เราควรเลือก font ที่เป็น Web safe font และควรมี x-height  ที่เท่ากันกัน หรือไม่ต่างกันมาก เพราะจะได้ไม่มีผลกระทบต่อ layout ของอีเมลมากนัก ในกรณีที่เรียกใช้ fallback font</p>
+<p><img class="aligncenter size-full wp-image-1690" src="{{ site.baseurl }}/assets/font-x-height1.png" alt="" width="650" height="84" /></p>
+<p>Web Font ที่ Support ใน Outlook โดย default แล้ว Outlook จะเรียกใช้ Times New Roman แต่กรณีที่เราอยากจัดการเรียกใช้ font หรือ CSS ที่เฉพาะเจาะจงให้กับ Outlook เท่านั้น มีวิธีการเรียกใช้ โดยเพิ่ม class="fallback-font" ใน HTML element ที่เราต้องการเรียก fallback แล้วเพิ่ม Style ไว้ที่ &lt;head&gt; ของ Email template</p>
+<pre>&lt;!--[if mso]&gt;
+&lt;style type=”text/css”&gt;
+  .fallback-font {
+    font-family: Arial, sans-serif;
+  }
+&lt;/style&gt;
+&lt;![endif]--&gt;</pre>
+<p>จบการเรียกใช้ Web font มาใช้ในอีเมลแล้วจ้า ต่อไปเป็นผลการทดลอง เพิ่ม Web font ให้อีเมล</p>
+<p>จากผลการทดลอง</p>
+<ul>
+<li>Apple mail ดูดีมาก เรียกใช้ยังไงก็มา</li>
+<li>Outlook เรียก Web font ไม่มา แต่ก็สามารถ fallback ไปใช้  Web safe font แทน<br />
+(Web safe fonts เป็น font default ที่ถูกติดตั้งใน computer, device หรือ OS ต่างๆ ใน เช่น Arial, Verdana, Georgia, Times New Roman และ Courier)</li>
+<li>Gmail ในเว็บ ก็ใช้ Web safe font</li>
+<li>Gmail ในมือถือ ก็ใช้ Web safe font เหมือนกัน</li>
+</ul>
+<p>ไว้ตอนหน้าเรามาทดลองเช็ค Template Email ว่าที่เราเขียนมา ในแต่ละ Email Clients หน้าตาเป็นยังไง กันแบบง่ายๆ กันจ้า : D</p>
+<p><strong>Reference </strong><br />
+<a href="https://www.campaignmonitor.com/blog/email-marketing/2016/07/10-things-need-know-web-fonts-email-right-now/">https://www.campaignmonitor.com/blog/email-marketing/2016/07/10-things-need-know-web-fonts-email-right-now/</a></p>
+<p>Featured Image<br />
+Photo by <a href="https://unsplash.com/photos/uGcDWKN91Fs?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Joanna Kosinska</a> on <a href="https://unsplash.com/search/photos/envelop?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></p>

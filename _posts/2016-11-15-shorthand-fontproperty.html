@@ -1,0 +1,44 @@
+---
+layout: post
+title: การเขียน Property ของ Font แบบ Shorthand
+date: 2016-11-15 08:07:17.000000000 +07:00
+type: post
+parent_id: '0'
+published: false
+password: ''
+status: publish
+categories:
+- Coding
+tags: []
+meta:
+  _publicize_pending: '1'
+  _edit_last: '12737289'
+  _at_widget: '1'
+  restapi_import_id: 59486cef9f102
+  original_post_id: '1254'
+  _wp_old_slug: '1254'
+author:
+  login: nemopear
+  email: nemopear@gmail.com
+  display_name: nemopear
+  first_name: NUTCHAYA
+  last_name: VORAYINGYONG
+permalink: "/2016/11/15/shorthand-fontproperty/"
+---
+<p>โดยปกติ เวลาเราเขียน Property ต่างๆ ของ Font เราก็จะเขียนเรียงๆกัน แบบข้างล่างนี้<br />
+<code><br />
+font-size: 30px;<br />
+font-family: 'Kanit', sans-serif;<br />
+line-height: 1.5; /* 45px */<br />
+</code></p>
+<p>จริงๆ มันสามารถย่อให้เหลือ 1 บรรทัดได้ แบบนี้<br />
+<code><br />
+font: 30px/1.5 'Kanit', sans-serif;<br />
+</code></p>
+<ol>
+<li>การเขียน line-height แบบไม่มีหน่วย ก็คือการเอา font-size มาตั้งหาร จากข้างบนก็จะเป็น 30px/1.5 = 45px;</li>
+<li>การเขียน Shorthand property ของ font ที่นำมาเขียนได้ก็จะมี font-style, font-variant, font-weight, font-size, line-height และ font-family</li>
+<li>การเขียนแบบ shorthand font-family จะอยู่ลำดับสุดท้ายเสมอ</li>
+<li>Line-height ก็ต้องอยู่หลัง font-size เสมอ โดยมีเครื่องหมาย / คั่น</li>
+<li>font-style, font-variant &amp; font-weight จะถูกเขียนก่อน font-size และ line-height</li>
+</ol>

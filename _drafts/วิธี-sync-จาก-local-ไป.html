@@ -1,0 +1,30 @@
+---
+layout: post
+title: วิธี sync จาก local ไป
+date: 
+type: post
+parent_id: '0'
+published: false
+password: ''
+status: draft
+categories:
+- Tips
+tags: []
+meta:
+  _edit_last: '12737289'
+  restapi_import_id: 59486cef9f102
+  original_post_id: '1016'
+  _wp_old_slug: '1016'
+author:
+  login: nemopear
+  email: nemopear@gmail.com
+  display_name: nemopear
+  first_name: NUTCHAYA
+  last_name: VORAYINGYONG
+permalink: "/"
+---
+<p>cd ไปที่ folder ใน local</p>
+<p>เช็คก่อนว่ามีอะไรเปลี่ยนบ้าง --dry-run<br />
+rsync -avz --no-perms -e "ssh -p51001" . www@103.253.135.81:/var/www/opendream.in.th/subdomains/doctor/html/sites/all/themes/basetheme_doctor/ --dry-run</p>
+<p>ถ้าพร้อมเอาขึ้นก็ลบ --dry-run ออก<br />
+rsync -avz --no-perms -e "ssh -p51001" . www@103.253.135.81:/var/www/opendream.in.th/subdomains/doctor/html/sites/all/themes/basetheme_doctor/</p>

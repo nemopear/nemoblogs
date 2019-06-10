@@ -1,0 +1,35 @@
+---
+layout: post
+title: Internet Explorer 11 ignores list-style:none on the first load
+date: 2016-11-09 07:54:35.000000000 +07:00
+type: post
+parent_id: '0'
+published: false
+password: ''
+status: publish
+categories:
+- Coding
+tags: []
+meta:
+  _publicize_pending: '1'
+  _edit_last: '12737289'
+  _at_widget: '1'
+  restapi_import_id: 59486cef9f102
+  original_post_id: '1245'
+  _wp_old_slug: '1245'
+author:
+  login: nemopear
+  email: nemopear@gmail.com
+  display_name: nemopear
+  first_name: NUTCHAYA
+  last_name: VORAYINGYONG
+permalink: "/2016/11/09/internet-explorer-11-ignores-list-stylenone-on-the-first-load/"
+---
+<p>หาสาเหตุไม่ได้สักที<a href="http://stackoverflow.com/questions/20356311/internet-explorer-11-ignores-list-stylenone-on-the-first-load" target="_blank"><strong> StackOverflow</strong></a> ช่วยชีวิตไว้<br />
+เป็นเฉพาะในตัวที่เป็น &lt;ul&gt; ใน IE11 ด้วย</p>
+<p>เขาบอกว่าให้เพิ่ม</p>
+<p><code>list-style-image: url(data:0);</code></p>
+<p>แต่มันอาจจะทำให้มีช่องว่างที่ไม่รู้ที่มาเหลืออยู่ ให้เราใส่<br />
+<code>font-size: 0;</code><br />
+เพิ่มไป<br />
+แต่ก็ต้องไปไล่ดูลูกๆ ของมันว่าทำให้<strong> style font-size</strong> ที่ไหนพังรึเปล่า</p>

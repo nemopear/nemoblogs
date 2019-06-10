@@ -1,0 +1,43 @@
+---
+layout: post
+title: 'Compass: Sprite Image'
+date: 2014-04-04 03:30:41.000000000 +07:00
+type: post
+parent_id: '0'
+published: false
+password: ''
+status: publish
+categories:
+- Tips
+tags: []
+meta:
+  _publicize_pending: '1'
+  _edit_last: '12737289'
+  restapi_import_id: 59486cef9f102
+  original_post_id: '906'
+  _wp_old_slug: '906'
+author:
+  login: nemopear
+  email: nemopear@gmail.com
+  display_name: nemopear
+  first_name: NUTCHAYA
+  last_name: VORAYINGYONG
+permalink: "/2014/04/04/compass-sprite-image/"
+---
+<p>เอาไว้ตอนตั้งค่า sprite ภาพ ด้วยการใช้ compass</p>
+<p><strong>Above style.scss</strong></p>
+<p>$icons-spacing : 150px;<br />
+$icons-layout: vertical;<br />
+$icons-sprite-dimensions: true;<br />
+@import "icons/*.png";<br />
+@include all-icons-sprites;<br />
+$icons: sprite-map("icons/*.png");</p>
+<p>&nbsp;</p>
+<p><strong>config.rb</strong></p>
+<p>http_path = "/"<br />
+css_dir = "stylesheets"<br />
+sass_dir = "sass"<br />
+images_dir = "images"<br />
+generated_images_dir = images_dir + "/generated"<br />
+javascripts_dir = "javascripts"<br />
+http_images_path = "sites/all/themes/.../images"</p>
