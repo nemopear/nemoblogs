@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Mediumish Template for Jekyll
+title: I'm Pear (Nemo)
 permalink: /about
 comments: true
 ---
@@ -8,7 +8,7 @@ comments: true
 <div class="row justify-content-between">
 <div class="col-md-8 pr-5">
 
-<p>This website is built with Jekyll and Mediumish template for Jekyll. It's for demonstration purposes, no real content can be found. Mediumish template for Jekyll is compatible with Github pages, in fact even this demo is created with Github Pages and hosted with Github.</p>
+<p>เป็นพนักงานบริษัทหนึ่ง อยู่ในจังหวัดเชียงใหม่ อายุเกือบ 30 ปี แต่งงานแล้ว เลี้ยงแมว 1 ตัว ชื่อปลาทู ชอบวิ่งไปดอยปุย, ปั่นจักรยานไต่เขา ตอนนี้ท้องอยู่ พักก่อน</p>
 
 <p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/mediumish-jekyll-template.png" alt="jekyll template mediumish" /></p>
 <h4>Documentation</h4>

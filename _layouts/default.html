@@ -11,7 +11,7 @@
 {% seo %}
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=Muli:400,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Muli:400,800|Pridi:300,500&display=swap" rel="stylesheet">
 <link href="{{ site.baseurl }}/assets/css/screen.css" rel="stylesheet">
 
 <link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet">
@@ -125,6 +125,7 @@ ga('send', 'pageview');
     {{ content }}
 </div>
 
+{% comment %}
 {% if site.mailchimp-list %}
 <!-- Bottom Alert Bar
 ================================================== -->
@@ -140,11 +141,13 @@ ga('send', 'pageview');
 	</div>
 </div>
 {% endif %}
+{% endcomment %}
     
 </div>
 
 <!-- Categories Jumbotron
 ================================================== -->
+<!-- 
 <div class="jumbotron fortags">
 	<div class="d-md-flex h-100">
 		<div class="col-md-4 transpdark align-self-center text-center h-100">
@@ -153,6 +156,7 @@ ga('send', 'pageview');
             </div>
 		</div>
 		<div class="col-md-8 p-5 align-self-center text-center">
+            {% comment %}
             {% assign categories_list = site.categories %}
             {% if categories_list.first[0] == null %}
                 {% for category in categories_list %}
@@ -164,9 +168,11 @@ ga('send', 'pageview');
                 {% endfor %}
             {% endif %}
             {% assign categories_list = nil %}
+            {% endcomment %}
 		</div>
 	</div>
 </div>
+-->
 
 <!-- Begin Footer
 ================================================== -->
@@ -176,9 +182,9 @@ ga('send', 'pageview');
             <div class="col-md-6 col-sm-6 text-center text-lg-left">
                 Copyright © {{ site.time | date: "%Y" }} {{ site.name }} 
             </div>
-            <div class="col-md-6 col-sm-6 text-center text-lg-right">    
+            <!-- <div class="col-md-6 col-sm-6 text-center text-lg-right">    
                 <a target="_blank" href="https://www.wowthemes.net/mediumish-free-jekyll-template/">Mediumish Jekyll Theme</a> by WowThemes.net
-            </div>
+            </div> -->
         </div>
     </div>
 </footer>

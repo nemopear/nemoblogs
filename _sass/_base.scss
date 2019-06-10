@@ -1,8 +1,24 @@
 body {
-    font-family: 'Muli', sans-serif;
+    font-family: 'Pridi','Muli', sans-serif;
 }
 
 .mainheading h1.sitetitle {
     font-family: 'Muli', sans-serif;
     font-weight: 700;
+}
+
+.footer {
+    margin-bottom: 0;
+}
+
+.mainheading {
+    padding-top: 0;
+}
+.layout-page {
+    .article-post {
+        font-family: 'Pridi','Muli', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 32px;
+    }
 }
