@@ -3,36 +3,24 @@ layout: post
 title: CSS Box Model
 date: 2018-11-07 06:52:02.000000000 +07:00
 type: post
-parent_id: '0'
-published: true
-password: ''
-status: publish
-categories:
-- Coding
-tags: []
-meta:
-  _edit_last: '12737289'
-  geo_public: '0'
-  _thumbnail_id: '1712'
-  timeline_notification: '1541573524'
-  _publicize_job_id: '24004187519'
-author:
-  login: nemopear
-  email: nemopear@gmail.com
-  display_name: nemopear
-  first_name: NUTCHAYA
-  last_name: VORAYINGYONG
+categories: [ html, coding ]
+image: assets/images/html-css-book.jpg
 permalink: "/2018/11/07/css-box-model/"
+comments: true
+status: publish
+published: true
 ---
-<p>CSS box model เป็น box ที่คลุมทุกๆ element ของ HTML ไว้ การจะสร้าง Layout ที่ดี ให้กับเว็บไซต์ เราจำเป็นต้องเข้าใจถึง CSS box model</p>
-<p><strong> CSS box model ประกอบด้วยส่วนต่างๆ ดังนี้</strong></p>
-<ol>
-<li>content area : ส่วนที่แสดง text หรือ รูปภาพ</li>
-<li>padding : เป็นช่องว่างที่อยู่ภายใน border ซึ่งคั่นระหว่าง <strong>border</strong> กับ <strong>content</strong> ถัดไป</li>
-<li>border :  อยู่รอบ content area และ padding ถ้าสามารถเห็น border ได้ เราจะเห็นการแยกชัดเจนระหว่าง padding กับ margin</li>
-<li>margin : เป็นช่องว่างที่อยู่ภายนอก border ซึ่งคั่นระหว่าง <strong>border</strong> กับ <strong>element</strong> ถัดไป</li>
-</ol>
-<p>[caption id="attachment_1712" align="aligncenter" width="300"]<img class="wp-image-1712 size-medium" title="CSS box model" src="{{ site.baseurl }}/assets/box-model.png?w=300" alt="" width="300" height="249" /> CSS box model[/caption]</p>
+
+CSS box model เป็น box ที่คลุมทุกๆ element ของ HTML ไว้ การจะสร้าง Layout ที่ดี ให้กับเว็บไซต์ เราจำเป็นต้องเข้าใจถึง CSS box model
+**CSS box model ประกอบด้วยส่วนต่างๆ ดังนี้**
+1. **content area** : ส่วนที่แสดง text หรือ รูปภาพ
+2. **padding** : เป็นช่องว่างที่อยู่ภายใน border ซึ่งคั่นระหว่าง **border** กับ **content** ถัดไป
+3. **border** :  อยู่รอบ content area และ padding ถ้าสามารถเห็น border ได้ เราจะเห็นการแยกชัดเจนระหว่าง padding กับ margin
+4. **margin** : เป็นช่องว่างที่อยู่ภายนอก border ซึ่งคั่นระหว่าง **border** กับ **element** ถัดไป
+
+
+![CSS Box model](/assets/box-model.png)
+{: .text-center}
 <h3>ความแตกต่างระหว่าง content-box กับ border-box</h3>
 <p><img class="aligncenter size-full wp-image-1704" src="{{ site.baseurl }}/assets/c7oir.png" alt="" width="744" height="409" /></p>
 <p>จากภาพตัวอย่างข้างบน จะเห็นว่าเรากำหนดค่า width: 300px; ไว้</p>

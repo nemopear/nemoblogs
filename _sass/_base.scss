@@ -26,8 +26,32 @@ body {
 .article-post {
     font-size: 1rem;
     line-height: 1.75;
+    font-family: 'Pridi','Muli', sans-serif;
+    font-weight: 300;
     p {
         font-family: 'Pridi','Muli', sans-serif;
         font-weight: 300;
+    }
+    h1, h2, h3, h4 {
+        font-weight: 300;
+        font-family: 'Muli','Pridi', sans-serif;
+    }
+}
+
+.highlight {
+    pre {
+        background-color: #1e1e1e;
+    }
+    .nt {
+        color: #6f9fd8;
+    }
+    .na {
+        color: #67cdfe;
+    }
+    .s {
+        color: #ce9178;
+    }
+    .language-html {
+        color: #eee;
     }
 }
