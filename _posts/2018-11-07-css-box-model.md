@@ -4,7 +4,7 @@ title: CSS Box Model
 date: 2018-11-07 06:52:02.000000000 +07:00
 type: post
 categories: [ html, coding ]
-image: assets/images/html-css-book.jpg
+image: assets/images/box-model.png
 permalink: "/2018/11/07/css-box-model/"
 comments: true
 status: publish
