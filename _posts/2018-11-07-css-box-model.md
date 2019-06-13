@@ -19,7 +19,7 @@ CSS box model เป็น box ที่คลุมทุกๆ element ขอ�
 4. **margin** : เป็นช่องว่างที่อยู่ภายนอก border ซึ่งคั่นระหว่าง **border** กับ **element** ถัดไป
 
 
-![CSS Box model](/assets/box-model.png)
+![CSS Box model](/assets/images/box-model.png)
 {: .text-center}
 <h3>ความแตกต่างระหว่าง content-box กับ border-box</h3>
 <p><img class="aligncenter size-full wp-image-1704" src="{{ site.baseurl }}/assets/c7oir.png" alt="" width="744" height="409" /></p>
