@@ -49,8 +49,16 @@ ga('send', 'pageview');
 
     <!-- Begin Logo -->
     <a class="navbar-brand" href="{{ site.baseurl }}/">
-    <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}">
+        <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}">
     </a>
+    <!-- Site Title
+    ================================================== -->
+    <div class="mainheading p-0">
+        <a href="{{ site.baseurl }}/">
+            <h1 class="sitetitle">{{ site.name }}</h1>
+
+        </a>
+    </div>
     <!-- End Logo -->
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -112,12 +120,12 @@ ga('send', 'pageview');
 
 <!-- Site Title
 ================================================== -->
-<div class="mainheading">
+<!-- <div class="mainheading">
     <h1 class="sitetitle">{{ site.name }}</h1>
     <p class="lead">
         {{ site.description }}
     </p>
-</div>
+</div> -->
 
 <!-- Content
 ================================================== -->

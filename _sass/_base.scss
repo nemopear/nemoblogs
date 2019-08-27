@@ -5,6 +5,13 @@ body {
 .mainheading h1.sitetitle {
     font-family: 'Muli', sans-serif;
     font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.lead {
+    font-size: 16px;
 }
 
 .footer {
@@ -53,5 +60,11 @@ body {
     }
     .language-html {
         color: #eee;
+    }
+}
+
+.mainheading {
+    h1.posttitle {
+        font-size: 32px;
     }
 }
