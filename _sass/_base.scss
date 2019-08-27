@@ -1,3 +1,8 @@
+/* media query */
+$tabletSize: 768px;
+$labtopSize: 992px;
+$DesktopSize: 1200px;
+
 body {
     font-family: 'Pridi','Muli', sans-serif;
 }
@@ -68,3 +73,14 @@ body {
         font-size: 32px;
     }
 }
+
+// .maxthumb {
+//     height: 300px;
+//     background-color: #eee;
+//     @media (min-width: $tabletSize) {
+//         height: 190px;
+//     }
+//     @media (min-width: $DesktopSize) {
+//         height: 250px;
+//     }
+// }

@@ -3,6 +3,7 @@ layout: post
 title:  "ทดสอบ Email Template โดยใช้ Putsmail"
 type: post
 categories: [ html, coding ]
+image: assets/images/email-client.jpg
 permalink: "/2019-08-27/email-test-with-putsmail/"
 date: 2019-05-10 14:18:08.000000000 +07:00
 comments: true
@@ -23,5 +24,9 @@ Putsmail ช่วยส่ง Email ไปยัง email address ที่เ�
 <img src="../../assets/images/putsmail.png">
 
 การส่งไปครั้งแรกจะมี Email ส่งไปยัง Email ผู้รับเพื่อให้ Confirm ก่อน
-เมื่อ Confirm แล้ว Email ที่เราต้องการ Test จะตามมา
+เมื่อ Confirm แล้ว Email ที่เราต้องการ Test จะถูกส่งตามมา
+
+**Credit Image**
+
+* [Unsplash image](https://unsplash.com/photos/3Mhgvrk4tjM)
 
