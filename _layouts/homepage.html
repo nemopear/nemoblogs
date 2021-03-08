@@ -75,30 +75,17 @@ ga('send', 'pageview');
                 {% else %}
                 <li class="nav-item">
                 {% endif %}
-                <a class="nav-link" href="{{ site.baseurl }}/index.html">Blog</a>
+                <a class="nav-link" href="{{ site.baseurl }}/index.html">Home</a>
                 </li>
                 
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
-                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#section-about">About</a>
+                </li> -->
+
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="{{ site.baseurl }}/index.html"">Blog</a>
+                </li> -->
                 
-                <!--
-                <li class="nav-item">
-                <a target="_blank" class="nav-link" href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/"> Docs</a>
-                </li>
-
-                <li class="nav-item">
-                <a target="_blank" class="nav-link" href="https://www.wowthemes.net/themes/mediumish-wordpress/"><i class="fab fa-wordpress-simple"></i> WP Version</a>
-                </li>
-
-                <li class="nav-item">
-                <a target="_blank" class="nav-link" href="https://www.wowthemes.net/themes/mediumish-ghost/"><i class="fab fa-snapchat-ghost"></i> Ghost Version</a>
-                </li>
-
-                <li class="nav-item">
-                <a target="_blank" class="nav-link" href="https://github.com/wowthemesnet/mediumish-theme-jekyll"><i class="fab fa-github"></i> Fork on Github</a>
-                </li> 
-                -->
                 {% comment %}
                 {% include search-lunr.html %}
                 {% endcomment %}
@@ -112,74 +99,71 @@ ga('send', 'pageview');
 </nav>
 <!-- End Navigation
 ================================================== -->
-
-<div class="site-content">
-
-<div class="container">
-
-<!-- Site Title
-================================================== -->
-<!-- <div class="mainheading">
-    <h1 class="sitetitle">{{ site.name }}</h1>
-    <p class="lead">
-        {{ site.description }}
-    </p>
-</div> -->
-
-<!-- Content
-================================================== -->
-<div class="main-content">
-    {{ content }}
-</div>
-
-{% comment %}
-{% if site.mailchimp-list %}
-<!-- Bottom Alert Bar
-================================================== -->
-<div class="alertbar">
-	<div class="container text-center">
-		<span><img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{site.title}}"> &nbsp; Never miss a <b>story</b> from us, subscribe to our newsletter</span>
-        <form action="{{site.mailchimp-list}}" method="post" name="mc-embedded-subscribe-form" class="wj-contact-form validate" target="_blank" novalidate>
-            <div class="mc-field-group">
-            <input type="email" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL" autocomplete="on" required>
-            <input type="submit" value="Subscribe" name="subscribe" class="heart">
+<div class="site-content pt-0">
+    <div class="hero">
+        <div class="hero-block">
+            <div id="hero-image" style="background-image: url('https://images.unsplash.com/photo-1614959675629-ace2021c504b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80');">
             </div>
-        </form>
-	</div>
+            <div class="hero-text">
+                <div class="container">
+                    <div class="secondary-text">Welcome</div>
+                <p>I'm <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+                </div>
+            </div>
+    </div>
+    <a class="scroll-down" href="#section-about">
+        <span></span>
+        <span></span>
+        <span></span>
+    </a>
+    </div>
 </div>
-{% endif %}
-{% endcomment %}
+  
+
+<section class="block-section" id="section-about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="https://images.unsplash.com/photo-1614959675629-ace2021c504b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80" alt="">
+            </div>
+            <div class="col-md-6">
+                <h2 class="block-title">
+                    About me
+                </h2>
+                <div class="block-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat est pariatur, porro in voluptatum deleniti corporis enim dolore dolor, excepturi esse maxime perspiciatis? Adipisci, error?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  
     
-</div>
 
-<!-- Categories Jumbotron
+    <!-- Posts Index
 ================================================== -->
-<!-- 
-<div class="jumbotron fortags">
-	<div class="d-md-flex h-100">
-		<div class="col-md-4 transpdark align-self-center text-center h-100">
-            <div class="d-md-flex align-items-center justify-content-center h-100">
-                <h2 class="d-md-block align-self-center py-1 font-weight-light">Explore <span class="d-none d-md-inline">→</span></h2>
-            </div>
-		</div>
-		<div class="col-md-8 p-5 align-self-center text-center">
-            {% comment %}
-            {% assign categories_list = site.categories %}
-            {% if categories_list.first[0] == null %}
-                {% for category in categories_list %}
-                    <a class="mt-1 mb-1" href="{{site.baseurl}}/categories#{{ category | url_escape | strip | replace: ' ', '-' }}">{{ category | camelcase }} ({{ site.tags[category].size }})</a>
-                {% endfor %}
-            {% else %}
-                {% for category in categories_list %}
-                    <a class="mt-1 mb-1" href="{{site.baseurl}}/categories#{{ category[0] | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }} ({{ category[1].size }})</a>
-                {% endfor %}
-            {% endif %}
-            {% assign categories_list = nil %}
-            {% endcomment %}
-		</div>
-	</div>
-</div>
--->
+<section class="block-section" id="section-blog">
+    <div class="container">
+        <div class="section-title">
+
+            <h2><span>Blog</span></h2>
+
+        </div>
+
+        <div class="row listrecent">
+
+            {% for post in paginator.posts limit: 3 %}
+
+            {% include postbox.html %}
+
+            {% endfor %}
+
+        </div>
+    </div>
+
+
+</section>
 
 <!-- Begin Footer
 ================================================== -->
@@ -198,7 +182,8 @@ ga('send', 'pageview');
 <!-- End Footer
 ================================================== -->
 
-</div> <!-- /.site-content -->
+<!-- </div>  -->
+<!-- /.site-content -->
 
 <!-- Scripts
 ================================================== -->
@@ -215,6 +200,7 @@ ga('send', 'pageview');
 
 <script src="{{ site.baseurl }}/assets/js/ie10-viewport-bug-workaround.js"></script> 
 <script src="{{ site.baseurl }}/assets/js/typing.js"></script> 
+<script src="{{ site.baseurl }}/assets/js/hero-image.js"></script> 
 
 {% if page.layout == 'post' %}
 <script id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js"></script>

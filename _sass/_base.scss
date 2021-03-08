@@ -3,6 +3,10 @@ $tabletSize: 768px;
 $labtopSize: 992px;
 $DesktopSize: 1200px;
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Pridi','Muli', sans-serif;
 }

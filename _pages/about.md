@@ -8,28 +8,13 @@ comments: true
 <div class="row justify-content-between">
 <div class="col-md-8 pr-5">
 
-<p>เป็นพนักงานบริษัทหนึ่ง อยู่ในจังหวัดเชียงใหม่ อายุเกือบ 30 ปี แต่งงานแล้ว เลี้ยงแมว 1 ตัว ชื่อปลาทู ชอบวิ่งไปดอยปุย, ปั่นจักรยานไต่เขา ตอนนี้ท้องอยู่ พักก่อน</p>
+<p>เป็นพนักงานบริษัทหนึ่ง อยู่ในจังหวัดเชียงใหม่</p>
 
-<p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/mediumish-jekyll-template.png" alt="jekyll template mediumish" /></p>
-<h4>Documentation</h4>
+<ul class="photo-gallery">
+    <li><img src="https://lh3.googleusercontent.com/2EdyxYZY1H7phczAeI5MhhBX7Z0emjCkhIKq97XwpWQIZUwQURbV-o6-AbE-JwXplTKmQ8FFmPUPJTaRt61fyokmJP4UBYv81MPNMasjhOFPZ02nuanxuLP4twjUwzEFp6SfPXbiljZ6i-lyWm63holhKHVZobU1PnCSCJZJsjiQsabSY3YsX_RyVgmbecbk5B1A9yIs3Its64xuJMMwQAHWTaQDFmCv6_muV_aswLE7tyoO79wc84yzdVU00HWgL7RpcWCH4koipMtZ4cWEFzWz6-eDAw3rC1TfUFKImCBgg0PhAOf1ruSPeo9nECoGCiHM7fwHOPwJwIi1LFxJ7vd6B2pMZgUNeAiELcQ8vTUH2uCDXG6EFyDEhUjJR1jzQvu0_Vf0RZd28Ak_Xu4o_bWuB5x43wKQ3BRJx6r3mhzBAqxdJ5eeW74_CACTb5GmMcmBVzDWb0bdimIqGUVOE2USV5Egxz10eyyqtwDAlsEWjv9wSLNg2IksWykHF3LuAIPov2fevkmKk1zbkNXU7zn01JoB1UP4tgf9VxthY4b9HW8Ec6VBnAzLBcxaqNCXhal9DABkv6Ucd0y8r4pClHjFb_IHi-R6NW9-exT4ixN6K8Qs5BI15-FNaA0KjbGK-g0pXAf4MFDqBmp0shSB549M4MiB-4mdiV-dpVEOkGA6K2FqbdT0zCdmvoWh6A=w1268-h846-no?authuser=0" alt="tokyo marathon 2015"/></li>
+    <li><img src="https://lh3.googleusercontent.com/FpGidUC1_SxRd15H4c3SdvOWzhHT-UU_rtH3zhWLMbNYk8dKts4vaFn1ACjDkID-VmXqcvBGqw22Oyy0sPF7_2LiL86I63MRHDZHUmu9uzcleKUlmKRLjbVPcX6wsuH-2wXRcexsYmFabVOm79WlLJ2BNT9ID0upM0ITjbzdmkJBNDzv0jo6InFDUYBtlWsKG-q2natOAj6fuSMH7XWYoCeJE1FTt5Mbpqk_04IkP072-iTZkN1VMK6PDJGYpS-LB-XnEtap0-CMUR4GwjqHcqvyXDupTA28uyDLZfVTcxpt9tSZZRfjZJivX5Kvvuu9ti242Ne83QgYbsXAXiF3tx5fpLJcli_w5bJSYFTX3Z2DF1YuOrMRi9uYhjbQQLWhgmXN0igD2Hu43aqr8ffb9E0zf8ZDkDO3wBbn0UR_5RRaSuLs62vzvt5CN4E4FP6kNV5NGNJbD0mL6wcgLCV9VAgDWnBQBtLmIFjZdGa8JlfR-pTTDsC7QBQOxTUEumkfB3Zyc6SvDGRJrscq-LGoneRZoEkhnqJFUocf9QtrGOQFyUJ-GyuL8S6yILk4fQ5sF1KDVlmONF6odloeaZfAt1n-6pbCdm7hiJFJltz5jaQGTw-kakrqaECVbA7aBtQrz1mFRljinzU2gNZOXkv9S-sg5VcmjN3ongHuzd5ImCgCSKe0TrknCQF8cEyB2Q=w1184-h845-no?authuser=0" alt="Ultar trail"/></li>
+    
+</ul>
 
-<p>Please, read the docs <a href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/">here</a>.</p>
-
-<h4>Questions or bug reports?</h4>
-
-<p>Head over to our <a href="https://github.com/wowthemesnet/mediumish-theme-jekyll">Github repository</a>!</p>
-
-</div>
-
-<div class="col-md-4">
-
-<div class="sticky-top sticky-top-80">
-<h5>Buy me a coffee</h5>
-
-<p>Thank you for your support! Your donation helps me to maintain and improve <a target="_blank" href="https://github.com/wowthemesnet/mediumish-theme-jekyll">Mediumish <i class="fab fa-github"></i></a>.</p>
-
-<a target="_blank" href="https://www.wowthemes.net/donate/" class="btn btn-danger">Buy me a coffee</a> <a target="_blank" href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/" class="btn btn-warning">Documentation</a>
-
-</div>
 </div>
 </div>
